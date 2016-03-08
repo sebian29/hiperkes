@@ -4,19 +4,19 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{{ ($title) ? $title : 'MTF :: PA' }}</title>
+    <title>{{ empty($title) ? 'Admin Panel' : $title }}</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.5 -->
-    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/admin/css/bootstrap.min.css') }}" />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="{{ asset('assets/css/font-awesome.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/admin/css/font-awesome.min.css') }}" />
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- Theme style -->
-    <link rel="stylesheet" href="{{ asset('assets/css/AdminLTE.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/admin/css/AdminLTE.min.css') }}" />
     <!-- iCheck -->
-    <link rel="stylesheet" href="{{ asset('assets/plugins/iCheck/square/blue.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/admin/plugins/iCheck/square/blue.css') }}" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -52,7 +52,7 @@
                 </div>
             @endif
             <p class="login-box-msg">Reset Password</p>
-            <form action="{{ url('/password/email') }}" method="post">
+            <form action="{{ url('/admin/password/email') }}" method="post">
                 <div class="form-group has-feedback">
                     <input type="email" class="form-control" placeholder="Email" name="email" value="{{ old('email') }}" />
                     <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
@@ -61,7 +61,7 @@
                     <div class="col-xs-12">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
                         <button type="submit" class="btn btn-primary btn-flat"><i class="fa fa-refresh"></i> Reset</button>
-                        <a href="{{ url('/auth/login') }}" class="btn btn-default btn-flat"><i class="fa fa-undo"></i> Back</a>
+                        <a href="{{ url('/admin/auth/login') }}" class="btn btn-default btn-flat"><i class="fa fa-undo"></i> Back</a>
                     </div>
                     <!-- /.col -->
                 </div>
@@ -72,11 +72,11 @@
     <!-- /.login-box -->
 
     <!-- jQuery 1.11.3 -->
-    <script type="text/javascript" src="{{ asset('assets/js/jquery-1.11.3.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('assets/admin/js/jquery-1.11.3.min.js') }}"></script>
     <!-- Bootstrap 3.3.5 -->
-    <script type="text/javascript" src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('assets/admin/js/bootstrap.min.js') }}"></script>
     <!-- iCheck -->
-    <script src="{{ asset('assets/plugins/iCheck/icheck.min.js') }}"></script>
+    <script src="{{ asset('assets/admin/plugins/iCheck/icheck.min.js') }}"></script>
     <script>
         $(function() {
             $('input').iCheck({

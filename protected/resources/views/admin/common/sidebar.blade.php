@@ -4,10 +4,10 @@
         <!-- Sidebar user panel -->
         <div class="user-panel">
             <div class="pull-left image">
-                <img src="{{ asset('assets/img/user2-160x160.jpg') }}" class="img-circle" alt="User Image" />
+                <img src="{{ asset('assets/admin/img/user2-160x160.jpg') }}" class="img-circle" alt="User Image" />
             </div>
             <div class="pull-left info">
-                <p>{{ (strlen(\Auth::user()->FullName) > 23) ? substr(\Auth::user()->FullName, 0, 23) . '...' : \Auth::user()->FullName }}</p>
+                {{-- <p>{{ (strlen(\Auth::user()->FullName) > 23) ? substr(\Auth::user()->FullName, 0, 23) . '...' : \Auth::user()->FullName }}</p> --}}
                 <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
             </div>
         </div>

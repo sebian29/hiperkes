@@ -4,26 +4,26 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{{ ($title) ? $title : 'MTF :: PA' }}</title>
+    <title>{{ ($title) ? $title : 'Admin Panel' }}</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.5 -->
-    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/admin/css/bootstrap.min.css') }}" />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="{{ asset('assets/css/font-awesome.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/admin/css/font-awesome.min.css') }}" />
     <!-- Ionicons -->
-    <link rel="stylesheet" href="{{ asset('assets/plugins/ionicons-2.0.1/css/ionicons.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/admin/plugins/ionicons-2.0.1/css/ionicons.min.css') }}" />
     <!-- Bootstrap 3 Dialog -->
-    <link rel="stylesheet" href="{{ asset('assets/plugins/bootstrap3-dialog/css/bootstrap-dialog.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/admin/plugins/bootstrap3-dialog/css/bootstrap-dialog.min.css') }}" />
     <!-- Theme style -->
-    <link rel="stylesheet" href="{{ asset('assets/plugins/iCheck/square/green.css') }}" />
-    <link rel="stylesheet" href="{{ asset('assets/css/AdminLTE.min.css') }}" />
-    <link rel="stylesheet" href="{{ asset('assets/css/skins/skin-purple.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/admin/plugins/iCheck/square/green.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/admin/css/AdminLTE.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/admin/css/skins/skin-purple.min.css') }}" />
 
     <!-- Air-Datepicker -->
-    <link rel="stylesheet" href="{{ asset('assets/plugins/air-datepicker/css/datepicker.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/admin/plugins/air-datepicker/css/datepicker.min.css') }}" />
     <!-- Selectize -->
-    <link rel="stylesheet" href="{{ asset('assets/plugins/selectize/css/selectize.bootstrap3.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/admin/plugins/selectize/css/selectize.bootstrap3.css') }}" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -35,9 +35,9 @@
 
 <body class="hold-transition skin-purple sidebar-mini">
     <div class="wrapper">
-        @include('common/header')
+        @include('admin/common/header')
         <!-- Left side column. contains the logo and sidebar -->
-        @include('common/sidebar')
+        @include('admin/common/sidebar')
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
             @yield('content')
@@ -54,25 +54,25 @@
     <!-- ./wrapper -->
 
     <!-- jQuery 1.11.3 -->
-    <script type="text/javascript" src="{{ asset('assets/js/jquery-1.11.3.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('assets/admin/js/jquery-1.11.3.min.js') }}"></script>
     <!-- Bootstrap 3.3.5 -->
-    <script type="text/javascript" src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('assets/admin/js/bootstrap.min.js') }}"></script>
     <!-- Bootstrap Dialog -->
-    <script type="text/javascript" src="{{ asset('assets/plugins/bootstrap3-dialog/js/bootstrap-dialog.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('assets/admin/plugins/bootstrap3-dialog/js/bootstrap-dialog.min.js') }}"></script>
     <!-- FastClick -->
-    <script type="text/javascript" src="{{ asset('assets/js/fastclick.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('assets/admin/js/fastclick.min.js') }}"></script>
     <!-- iCheck -->
-    <script type="text/javascript" src="{{ asset('assets/plugins/iCheck/icheck.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('assets/admin/plugins/iCheck/icheck.min.js') }}"></script>
     <!-- Selectize -->
-    <script type="text/javascript" src="{{ asset('assets/plugins/selectize/js/standalone/selectize.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('assets/admin/plugins/selectize/js/standalone/selectize.min.js') }}"></script>
     <!-- Air-Datepicker -->
-    <script type="text/javascript" src="{{ asset('assets/plugins/air-datepicker/js/datepicker.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('assets/plugins/air-datepicker/js/i18n/datepicker.en.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('assets/admin/plugins/air-datepicker/js/datepicker.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('assets/admin/plugins/air-datepicker/js/i18n/datepicker.en.js') }}"></script>
     <!-- AdminLTE App -->
-    <script type="text/javascript" src="{{ asset('assets/js/app.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('assets/admin/js/app.min.js') }}"></script>
     <!-- Javascript Page -->
     @if(isset($jspage))
-    <script type="text/javascript" src="{{ asset('protected/resources/views/page/'.$jspage.'.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('protected/resources/views/admin/page/'.$jspage.'.js') }}"></script>
     @endif
 </body>
 
