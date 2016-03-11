@@ -59,7 +59,10 @@
       <!-- Start Contact Widget -->
       <div class="col-md-3 col-xs-12">
         <div class="footer-widget contact-widget">
-          <h4><img src="{{ asset('assets/images/logo-dki.png') }}" width="50" class="img-responsive" alt="Footer Logo" /></h4>
+          <h4>
+              <img src="{{ asset('assets/images/logo-dki.png') }}" width="50" class="img-responsive" alt="Footer Logo" style="display:inline" />
+              <img alt="" src="{{ asset('assets/images/hiperkes/logo.png') }}" class="img-responsive" style="display:inline" />
+          </h4>
           <p>Balai Higiene Perusahaan, Kesehatan dan Keselamatan Kerja (Balai Hiperkes dan KK)</p>
           <ul>
             <li><span>Telepon:</span> +6221 234 567 890</li>

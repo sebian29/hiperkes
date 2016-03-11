@@ -8,7 +8,7 @@
             </button>
             <!-- End Toggle Nav Link For Mobiles -->
             <a class="navbar-brand" href="{{ url('/') }}">
-                <img alt="" src="{{ asset('assets/images/logo-dki.png') }}" width="50" style="margin-top:-15px" class="img-responsive">
+                <img alt="" src="{{ asset('assets/images/hiperkes/logo.png') }}" style="margin-top:-12px" class="img-responsive">
             </a>
         </div>
         <div class="navbar-collapse collapse">

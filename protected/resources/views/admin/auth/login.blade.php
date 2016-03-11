@@ -29,7 +29,7 @@
 <body class="hold-transition login-page">
     <div class="login-box">
         <div class="login-logo">
-            <a href="{{ url('/') }}"><b>HIPERKES</b> | Admin</a>
+            <a href="{{ url('/') }}"><img alt="" src="{{ asset('assets/images/hiperkes/logo.png') }}" /></a>
         </div>
         <!-- /.login-logo -->
         <div class="login-box-body">
@@ -70,7 +70,6 @@
         <!-- /.login-box-body -->
         <div align="center" style="margin-top:10px;font-size:12px">
             <strong>Copyright &copy; 2016 <a href="#">LMS</a>.</strong> All rights reserved.<br />
-            <h5><a href="{{ url('/') }}" class="link"><i class="fa fa-send"></i> Hiperkes</a></h5>
         </div>
     </div>
     <!-- /.login-box -->
